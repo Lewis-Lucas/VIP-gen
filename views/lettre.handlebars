@@ -1,0 +1,14 @@
+<div class="menuLettres"><b>Cliquez sur une lettre : </b>
+{{#each lettres}}
+<a href="/repertoire/{{this.lettre}}">
+    {{this.lettre}}
+</a>
+{{/each}}
+</div>
+
+{{#each personne}}
+<div class="ListeVIPLettre">
+    <img src="/images/vip/{{this.photo}}" alt="Image Officielle de {{this.prenom}}{{this.nom}}">
+   <a  href="/repertoire/vip/{{this.numero}}"> {{this.nom}} {{this.prenom}}</a>
+</div>
+{{/each}}

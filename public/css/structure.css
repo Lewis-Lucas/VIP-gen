@@ -1,0 +1,393 @@
+body {
+    font-family: "Segoe UI", "DejaVu Sans", Verdana, sans-serif;
+    background-image: -webkit-linear-gradient(#9f0909, #4e0000);
+    background-image: -o-linear-gradient(#9f0909, #4e0000);
+    background-image: linear-gradient(#9f0909, #4e0000);
+    background-size: 1rem 200rem;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #000000;
+}
+
+.monBody #container {
+    width: 1300px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.monBody #header {
+    height: 140px;
+    background-color: #000;
+    color: #fff;
+}
+
+.menu_haut {
+    background-color: #000;
+    color: #fff;
+    margin-top: -13px;
+    width: 100%;
+}
+
+.menu_haut ul {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+.menu_haut li {
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+}
+
+.menu_haut li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    border: 0 none;
+}
+
+.menu_haut li a:hover {
+    color: #000;
+    background: #eee;
+}
+
+.monBody #contenu {
+    padding: 20px;
+    overflow: auto;
+}
+
+.monBody #footer {
+    padding: 0 10px;
+    font-size: 0.8em;
+    text-align: center;
+    height: 150px;
+}
+
+.baniere {
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: none;
+}
+
+.baniere img {
+    border: none;
+}
+
+#LogoNode {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #0072ff;
+}
+
+.traitVertical {
+    border-left: 1px white solid;
+}
+
+.ListeVIPLettre {
+    display: inline-block;
+}
+
+.ListeVIPLettre img {
+    height: 150px;
+    margin: 10px;
+}
+
+.ListeVIPLettre a {
+    display: block;
+}
+
+.menuLettres {
+    text-align: right;
+    vertical-align: top;
+    margin-right:5%;
+}
+.menuLettres a{
+    padding:0.5%;
+}
+#photoInfo{
+    text-align: left;
+    display: inline-block;
+}
+#infoBasiqueVip{
+    text-align: left;
+    display: inline-block;
+    vertical-align: bottom;
+}
+#resteInfoVip{
+    text-align: left;
+}
+.infosvip{
+    text-align: left;
+}
+
+.photosVIP{
+    text-align: center;
+
+}
+
+
+.popuplink {
+    position: relative;
+}
+
+.popuplink div {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 150px;
+    display: none;
+    padding: 15%;
+}
+
+.popuplink:hover div {
+    display: block;
+    position: absolute;
+    opacity: 100%;
+    bottom: 2em;
+    left: 2em;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.popuplink div img {
+    margin-right: 5%;
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.photosVIP img {
+    height: 150px;
+}
+
+/*LIGHTBOX*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1% 5% 6% 5%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    height: 400px;
+}
+
+.mySlides img {
+    height: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    margin-top: 15%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    float: left;
+}
+
+/* Position the "next button" to the right */
+.next {
+    float: right;
+    border-radius: 0 3px 3px 0;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: darkgrey;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article{
+    float: left;
+    width: 75%;
+    text-align: left;
+}
+
+.article img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.listeVIP {
+    width: 15%;
+    text-align: right;
+    margin-right: 2%;
+    margin-left: 3%;
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.listeVIPBody a {
+    color: black;
+    text-decoration: underline;
+    display: block;
+}
+
+.headerListeVIP {
+    padding: 3%;
+    text-align: center;
+    background-color: black;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.listeVIPBody{
+    padding: 3%;
+    text-align: center;
+}
+
+.footerArticle{
+    background: lightgray;
+}
+
+.footerArticle p{
+    display:  inline;
+}
+
+.footerArticle a{
+    float: right;
+}
+
+legend + p{
+    text-decoration: underline;
+}
+
+/*********************CSS PAGE ALBUM*************************/
+.wrapper {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-gap: 10px;
+    margin-left:25%;
+}
+.wrapper img{
+    width:150px;
+    height:170px;
+}
+#photoVip{
+    margin: 2% 0% 2% 0%;
+}
+
+#photoVip img {
+    width: auto;
+    height: 200px;
+}
+
+#commentairePhoto h4{
+    width:8%;
+    padding-left: 0.5%;
+    text-align: left;
+    margin: -2% 0% 0% 1%;
+    background: white;
+}
+#commentairePhoto{
+    font-size: 15px;
+    margin-bottom: 5%;
+    border: 1px solid black;
+    padding: 1% 0% 1% 0%;
+}
+
+.box {
+    height: 150px;
+    width: 100px;
+    border: 1px solid black;
+}

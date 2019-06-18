@@ -1,0 +1,31 @@
+{{#if this.article}}
+    {{#each this.article}}
+        <fieldset class="article">
+            <legend>Article</legend>
+            <p>{{this.prenom}} {{this.nom}}</p>
+            <h2><b>{{this.titreArticle}}</b></h2>
+            <p>{{this.article}}</p>
+            <img src="/images/vip/{{this.imageArticle}}" alt="Image Article {{this.titreArticle}}">
+            <div class="footerArticle">
+                <p>[Ajouter le {{formatDate this.dateArticle "D MMMM YYYY"}}]</p>
+                <a href="/repertoire/vip/{{idVip}}">voir sa fiche</a>
+            </div>
+        </fieldset>
+    {{/each}}
+{{else}}
+    <fieldset class="article">
+        <legend>Article</legend>
+        <p>Choississez un vip pour voir les articles le concernant</p>
+    </fieldset>
+{{/if}}
+
+<div class="listeVIP">
+    <div class="headerListeVIP">
+        <img class="enteteListeVip" src="/images/vips.png" alt="entête liste vip">
+    </div>
+    <div class="listeVIPBody">
+        {{#each this.VIP}}
+            <a href="/articles/vip/{{this.idVip}}">{{this.prenom}} {{this.nom}}</a>
+        {{/each}}
+    </div>
+</div>

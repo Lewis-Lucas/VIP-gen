@@ -1,0 +1,42 @@
+<h1>Album photo des stars </h1>
+
+{{#if photoOfAVip}}
+    <div id="photoVip">
+        <h3> {{photoOfAVip.prenom}} {{photoOfAVip.nom}}</h3>
+        {{#if hasPrecedent}}<a href="/album/detail/{{this.idVip}}/precedent/{{numPhoto}}"> << </a>{{/if}}
+        <img src="/images/vip/{{photoOfAVip.photo}}">
+        {{#if hasNext}}<a href="/album/detail/{{this.idVip}}/suivant/{{numPhoto}}"> >> </a>{{/if}}
+    </div>
+    <div id="commentairePhoto">
+        <h4> Commentaire</h4>
+        {{photoOfAVip.description}}
+    </div>
+{{/if}}
+
+<div class="wrapper">
+    {{#each photos}}
+        <a href="/album/detail/{{this.idVip}}"><img class="box f" src="/images/vip/{{this.photo}}"></a>
+    {{/each}}
+</div>
+
+{{#ifCond  this.debutAlbumPhoto '!=' 0}}
+    <a href="/album/debut">
+        <button type="button">Debut</button>
+    </a>
+
+    <a href="/album/precedent">
+        <button id="precedent">Précédent</button>
+    </a>
+{{/ifCond}}
+
+{{#ifCond  this.debutAlbumPhoto '!=' "fin" }}
+    <a href="/album/suivant">
+        <button id="suivant">Suivant</button>
+    </a>
+
+    <a href="/album/fin">
+        <button id="fin">Fin</button>
+    </a>
+{{/ifCond}}
+</br>
+
